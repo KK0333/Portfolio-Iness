@@ -1,0 +1,636 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #efe8ee;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.dark-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.72);
+}
+
+.dark-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* HERO */
+
+.hero-section{
+    padding: 0;
+    background-image: url("background2.jpg");
+}
+
+.hero-shell{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0;
+}
+
+.hero-card{
+    background: transparent;
+    color:white;
+    min-height:auto;
+    display:grid;
+    grid-template-columns: 1.2fr 0.9fr;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-left{
+    padding: 80px 120px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.hero-label{
+    font-size: 0.95rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    color:#d4b28c;
+
+}
+
+.hero-title{
+    font-family: Georgia, serif;
+    font-size: 5.4rem;
+    line-height: 0.95;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+}
+
+.hero-subtitle{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color:#d4b28c;
+    margin-bottom: 28px;
+}
+
+.hero-description{
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 560px;
+    color:#f1f1f1;
+}
+
+.hero-right{
+    height: 100%;
+    overflow:hidden;
+}
+
+.hero-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-menu{
+    display:flex;
+    gap:34px;
+    flex-wrap:wrap;
+    margin-top:90px;
+}
+
+.hero-menu a{
+    color:#d6d6d6;
+    text-decoration:none;
+    font-size:1rem;
+    letter-spacing:0.5px;
+    position:relative;
+    transition:0.3s ease;
+}
+
+.hero-menu a:hover{
+    color:#d4b28c;
+}
+
+.hero-menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:1px;
+    background:#d4b28c;
+    transition:0.3s ease;
+}
+
+.hero-menu a:hover::after{
+    width:100%;
+}
+
+/* ABOUT */
+
+.about-section {
+    background-image: url("background1.jpg");
+    color: white;
+}
+
+.about-image-block {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.about-text-block {
+    max-width: 760px;
+}
+
+.about-main-title {
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #d4b28c;
+}
+
+.about-text-block p {
+    font-size: 1.08rem;
+    line-height: 1.95;
+    color: white;
+    margin-bottom: 22px;
+}
+
+/* SKILLS */
+
+.skills-section {
+    background-image: url("background2.jpg");
+}
+
+.skills-title {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #d4b28c;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.skill-card {
+    background: rgba(18, 18, 18, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 14px;
+    height: 100%;
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+    color: #d4b28c;
+    font-size: 1.05rem;
+    line-height: 1.25;
+}
+
+.skill-card ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* PROJECTS */
+
+.projects-section {
+    background-image: url("background1.jpg");
+}
+
+.projects-title {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #d4b28c;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.project-card {
+    background: rgba(18, 18, 18, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 14px;
+    height: 100%;
+}
+
+.project-card h3 {
+    color: #d4b28c;
+    margin-bottom: 10px;
+}
+
+.project-card ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+    color: #f1f1f1;
+}
+
+/* LANGUAGES */
+
+.languages-section {
+    background-image: url("background2.jpg");
+}
+
+.languages-image-block {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.languages-image {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+}
+
+.languages-main-title {
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+    color: #d4b28c;
+}
+
+.languages-text-block ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.languages-text-block li {
+    margin-bottom: 12px;
+    color: white;
+    font-size: 1.08rem;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #0e0e0e;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-title {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    color: #d4b28c;
+    margin: 0;
+}
+
+.contact-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    word-break: break-word;
+}
+
+.contact-item:hover {
+    color: #d4b28c;
+}
+
+/* FOOTER */
+
+footer {
+    display: none;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4b28c;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991.98px) {
+    .dark-section {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-section {
+        padding: 0;
+    }
+
+    .hero-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .hero-left {
+        padding: 70px 48px 36px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        line-height: 0.98;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        line-height: 1.75;
+    }
+
+    .hero-menu {
+        margin-top: 42px;
+        gap: 20px 24px;
+    }
+
+    .hero-right {
+        height: auto;
+        min-height: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-height: 72vh;
+        object-fit: cover;
+    }
+
+    .about-image-block,
+    .languages-image-block {
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .about-image {
+        max-width: 340px;
+    }
+
+    .languages-image {
+        max-width: 420px;
+    }
+
+    .about-text-block,
+    .languages-text-block {
+        max-width: 100%;
+    }
+
+    .about-main-title,
+    .languages-main-title {
+        font-size: 2.6rem;
+    }
+
+    .about-text-block p,
+    .languages-text-block li {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .contact-title {
+        margin-bottom: 20px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 767.98px) {
+    .dark-section {
+        min-height: auto;
+        padding: 56px 0;
+    }
+
+    .hero-section {
+        padding: 0;
+    }
+
+    .hero-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-left {
+        padding: 48px 22px 26px;
+    }
+
+    .hero-label {
+        font-size: 0.82rem;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: 2.95rem;
+        line-height: 0.98;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.02rem;
+        line-height: 1.3;
+        margin-bottom: 16px;
+        max-width: 280px;
+    }
+
+    .hero-description {
+        font-size: 0.96rem;
+        line-height: 1.65;
+        max-width: 100%;
+    }
+
+    .hero-menu {
+        margin-top: 28px;
+        gap: 14px 18px;
+    }
+
+    .hero-menu a {
+        font-size: 0.92rem;
+    }
+
+    .hero-right {
+        height: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-height: 62vh;
+        object-fit: cover;
+    }
+
+    .about-main-title,
+    .skills-title,
+    .projects-title,
+    .languages-main-title {
+        font-size: 2.1rem;
+        margin-bottom: 22px;
+    }
+
+    .about-image-block,
+    .languages-image-block {
+        margin-bottom: 24px;
+    }
+
+    .about-image {
+        max-width: 280px;
+    }
+
+    .languages-image {
+        max-width: 100%;
+    }
+
+    .about-text-block p,
+    .languages-text-block li,
+    .skill-card li,
+    .project-card li,
+    .contact-item {
+        font-size: 0.97rem;
+        line-height: 1.65;
+    }
+
+    .skill-card,
+    .project-card {
+        padding: 24px;
+    }
+
+    .contact-section {
+        padding: 42px 0;
+    }
+
+    .contact-title {
+        font-size: 1.65rem;
+        margin-bottom: 16px;
+    }
+
+    .contact-links {
+        gap: 12px;
+    }
+
+    .contact-item {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+    .dark-section {
+        padding: 48px 0;
+    }
+
+    .hero-left {
+        padding: 40px 18px 22px;
+    }
+
+    .hero-title {
+        font-size: 2.45rem;
+        line-height: 1;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        max-width: 240px;
+    }
+
+    .hero-description {
+        font-size: 0.93rem;
+        line-height: 1.6;
+    }
+
+    .hero-menu {
+        gap: 12px 16px;
+        margin-top: 24px;
+    }
+
+    .hero-menu a {
+        font-size: 0.88rem;
+    }
+
+    .hero-image {
+        max-height: 56vh;
+    }
+
+    .about-main-title,
+    .skills-title,
+    .projects-title,
+    .languages-main-title {
+        font-size: 1.85rem;
+    }
+
+    .about-image {
+        max-width: 240px;
+    }
+
+    .skill-card,
+    .project-card {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-item {
+        font-size: 0.92rem;
+    }
+}
