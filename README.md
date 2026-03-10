@@ -18,7 +18,7 @@ It contains:
 The layout is divided into two main parts:
 - a text block on the left
 - an image block on the right
-- 
+
 ## About Section
 The About section presents a short introduction about the academic background and interests.
 
