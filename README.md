@@ -93,8 +93,11 @@ Examples include:
 This project has several advantages:
 
 1.the website has a **clear and structured layout**, making navigation intuitive.
+
 2.the design is **visually consistent**, using a dark theme and organized content blocks.
+
 3.the **responsive design**, allowing the site to adapt to different devices such as smartphones, tablets and desktop computers.
+
 4.Finally, the project follows a **clean code organization**, separating HTML, CSS and JavaScript, which improves readability and maintainability.
 
 ---
@@ -103,7 +106,9 @@ This project has several advantages:
 Despite its strengths, the project has some limitations:
 
 1.The website is a **static website**, meaning that it does not include a backend or database.
+
 2.some advanced features such as dynamic content or a real contact form cannot be implemented without additional technologies.
+
 3.the interactive elements remain relatively simple, as the project focuses mainly on fundamental web development concepts.
 
 ---
