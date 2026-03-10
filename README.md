@@ -14,59 +14,39 @@ The hero section is the first part of the website that visitors see.
 It contains:
 - the main title of the portfolio
 - a short presentation text
-- the navigation menu
-- a portrait image
+- the menu
+- the first image
 
 The layout is divided into two main parts:
 - a text block on the left
 - an image block on the right
-
-This layout creates a clear visual hierarchy and helps introduce the website effectively.
-
+- 
 ## About Section
 The About section presents a short introduction about the academic background and interests.
 
-Its purpose is to provide context about the profile and explain the academic orientation.
-
 ## Skills Section
 The Skills section displays the technical competencies acquired during the studies.
-
 Skills are organized using **cards**, which visually separate different skill categories.
-
-This improves readability and helps structure the information clearly.
 
 ## Projects Section
 The Projects section presents examples of academic projects completed during the bachelor's degree.
 
-Each project is displayed in a structured layout with a short description.
-
-This allows visitors to better understand the type of work completed during the studies.
-
 ## Languages Section
 This section presents the languages spoken and the level of proficiency.
 
-This information is relevant in academic and professional contexts.
-
 ## Contact Section
 The Contact section provides ways to reach the author.
-
 It contains contact information such as email and LinkedIn.
 
 ---
 
 # Technical Choices
-
 Several technical decisions were made during the development of this project.
 
 ## Single Page Layout
 The website was designed as a **single-page application**.
 
-Advantages of this choice include:
-- smoother navigation
-- faster browsing experience
-- a simpler overall structure
-
-Users can navigate through the site without loading additional pages.
+Advantage of this choice include -> Users can navigate through the site without loading additional pages.
 
 ## Use of Custom CSS
 Most of the visual design was implemented using **custom CSS**.
@@ -78,7 +58,7 @@ This allows full control over:
 - spacing
 - visual consistency
 
-CSS techniques used include:
+CSS include:
 - CSS Grid
 - Flexbox
 - Media queries
@@ -90,7 +70,7 @@ These techniques allow the design to remain flexible and adaptable.
 Bootstrap utilities were used mainly for spacing and layout.
 
 Examples include:
-- margin utilities (`mt`, `mb`)
+- margin utilities 
 - layout containers (`container`)
 - responsive layout helpers
 
@@ -110,42 +90,29 @@ Examples include:
 ---
 
 # Advantages of the Project
+This project has several advantages:
 
-This project has several advantages.
-
-First, the website has a **clear and structured layout**, making navigation intuitive.
-
-Second, the design is **visually consistent**, using a dark theme and organized content blocks.
-
-Another advantage is the **responsive design**, allowing the site to adapt to different devices such as smartphones, tablets and desktop computers.
-
-Finally, the project follows a **clean code organization**, separating HTML, CSS and JavaScript, which improves readability and maintainability.
+1.the website has a **clear and structured layout**, making navigation intuitive.
+2.the design is **visually consistent**, using a dark theme and organized content blocks.
+3.the **responsive design**, allowing the site to adapt to different devices such as smartphones, tablets and desktop computers.
+4.Finally, the project follows a **clean code organization**, separating HTML, CSS and JavaScript, which improves readability and maintainability.
 
 ---
 
 # Limitations of the Project
+Despite its strengths, the project has some limitations:
 
-Despite its strengths, the project has some limitations.
-
-The website is a **static website**, meaning that it does not include a backend or database.
-
-Because of this, some advanced features such as dynamic content or a real contact form cannot be implemented without additional technologies.
-
-Another limitation is that the interactive elements remain relatively simple, as the project focuses mainly on fundamental web development concepts.
+1.The website is a **static website**, meaning that it does not include a backend or database.
+2.some advanced features such as dynamic content or a real contact form cannot be implemented without additional technologies.
+3.the interactive elements remain relatively simple, as the project focuses mainly on fundamental web development concepts.
 
 ---
 
 # Possible Improvements
-
-Several improvements could be made in future versions of the project.
-
 One improvement would be to add **more advanced animations or interactions** to make the interface more dynamic.
-
 Another possible improvement would be the implementation of a **functional contact form** connected to a backend service.
 
-The projects section could also be expanded with **more detailed project descriptions**, images or links to real applications.
-
-Finally, accessibility improvements could be implemented, such as better support for screen readers and improved keyboard navigation.
+---
 
 # Author
 Iness El Moujahdi  
