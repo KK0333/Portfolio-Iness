@@ -1,5 +1,3 @@
-# Portfolio-CV-en-ligne
-
 # Portfolio Website – Iness El Moujahdi
 
 This repository contains the source code of a personal portfolio website developed as part of a university project.
