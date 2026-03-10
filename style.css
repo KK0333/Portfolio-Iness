@@ -633,4 +633,9 @@ footer {
     .contact-item {
         font-size: 0.92rem;
     }
+
+}
+
+#topButton{
+z-index: 9999;
 }
